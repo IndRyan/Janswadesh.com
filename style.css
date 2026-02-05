@@ -1,15 +1,91 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{line-height:1.6}
-.navbar{display:flex;justify-content:space-between;padding:15px 30px;background:#111;color:#fff;position:sticky;top:0}
-.navbar a{color:#fff;margin-left:15px;text-decoration:none}
-.hero{height:90vh;background:linear-gradient(135deg,#0066ff,#00ccff);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-.btn{margin-top:20px;padding:12px 30px;background:#fff;color:#0066ff;text-decoration:none;border-radius:25px}
-section{padding:60px 20px;text-align:center}
-.light{background:#f9f9f9}
-.cards{display:flex;justify-content:center;gap:20px;margin-top:30px}
-.card{background:#fff;padding:30px;width:220px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-form{max-width:400px;margin:auto}
-input,textarea,button{width:100%;padding:12px;margin:10px 0}
-button{background:#0066ff;color:#fff;border:none}
-footer{background:#111;color:#fff;text-align:center;padding:15px}
-@media(max-width:768px){.cards{flex-direction:column;align-items:center}}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.company-logo img {
+    height: 40px;
+}
+
+.nav-links {
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-bar input {
+    padding: 6px;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.cards-container {
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header img,
+.card-header video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
